@@ -1,5 +1,8 @@
 pipeline {
-  agent { 
+  agent {
+    node {
+      label 'jkagent'
+    }
     docker { 
       image 'php:8.4.8-alpine3.22' 
     } 
